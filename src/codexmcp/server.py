@@ -181,11 +181,11 @@ async def codex(
         ),
     ] = "",
     reasoning_effort: Annotated[
-        Optional[Literal["low", "medium", "high", "xhigh"]],
+        Optional[Literal["low", "medium", "high", "xhigh", "max"]],
         Field(
             description=(
                 "Override Codex config `model_reasoning_effort` (thinking budget). "
-                "Allowed values: low, medium, high, xhigh. "
+                "Allowed values: low, medium, high, xhigh, max. "
                 "If omitted, uses the config/profile default."
             ),
         ),
